@@ -15,6 +15,14 @@ body{
   color: #333;
 }
 
+.major_containers{
+  padding: 3rem 9rem;
+}
+@media(max-width: 1024px){
+  .major_containers{
+    padding: 3rem 1rem;
+  }
+}
 
 header{
   padding: 1.2rem 9rem;
@@ -107,16 +115,16 @@ nav a:hover, nav a.active {
 .btn-hire {
   background-color: #007E6A;
   color:white;
-  padding:12px 28px;
+  padding: 14px 30px;
   border-radius: 40px;
-  margin-right: 5px;
   border: none;
   cursor: pointer;
   transition: 0.3s ease;
-  font-size: 15px;
+  font-size: 18px;
+  font-weight: 600;
 }
 
-.btn:hover {
+.btn-hire:hover {
   background-color: #005f4f;
   transition: all 0.3s ease;
 }
@@ -131,23 +139,17 @@ nav a:hover, nav a.active {
 }
 
 .btn-cv {
-  background-color: #02a55f;
+  background-color: #2bca85;
   color:white;
-  padding:15px;
+  padding: 14px 30px;
   border-radius: 40px;
   margin-left: 20px;
   margin-top: 20px;
   border: none;
   font-size: 15px;
-}
-.h2-card{
-  text-align: center;
-  margin: 20px 0;
-  font-size: 2rem;
-  color: black;
   font-weight: 600;
-
 }
+
 
 .home{
   position: relative;
@@ -168,6 +170,14 @@ nav a:hover, nav a.active {
   justify-content: center;
   width: 100%;
   height: 100vh;
+}
+@media(max-width: 1024px){
+  header{
+    padding: 1.2rem .5rem;
+  }
+  .container-home{
+    padding: 1rem;
+  }
 }
 .bg_banner{
   top: 0;
@@ -199,18 +209,24 @@ nav a:hover, nav a.active {
 }
 
 .container-about {
+  width: 100%;
   display:flex;
+  flex-direction: row;
   align-items: center;
-  gap: 50px;
-  width:auto;
-  padding: 10px 20px;
-  margin-top: 100px;
-  background-color: #fff;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  gap: 5rem;
+  justify-content: center;
+  gap:2.5rem;
+  /* padding: 3rem 9rem; */
+  background-color: white;
+}
+.bio-image{
+  width: 35%;
+}
+.bio-image img{
+  border-radius: 6px;
+  width: 100%;
 }
 .bio-text {
+  width: 65%;
   flex: 1;
   padding: 20px;
 }
@@ -257,15 +273,24 @@ nav a:hover, nav a.active {
   font-weight: 600;
 }
 .card-container{
+  width: 100%;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  gap: 10px;
+  gap: 16px;
   margin: 50px 0;
-  padding: 20px 0;
-
+}
+.h2-card{
+  text-align: center;
+  margin: 20px 0;
+  font-size: 2.45rem;
+  color: rgb(63, 60, 60);
+  font-weight: 600;
+}
+.card-container i{
+  font-size: 2.4rem;
+  color: #007E6A;
 }
 
 .card {
@@ -274,16 +299,26 @@ nav a:hover, nav a.active {
   background-color: #fff;
   border-radius: 5px;
   overflow: hidden;
-  margin:5px;
-  padding: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
+  padding: 2rem 1.8rem;
 
 }
-h4:hover {
+.card h4{
+  transition: .3s ease;
+  margin-top: 16px;
+  font-size: 22px;
+  opacity: .85;
+  font-weight: 600;
+}
+.card h4:hover {
   color: #005f4f;
 }
-
+.card p{
+  margin-top: 10px;
+  opacity: .75;
+  font-size: 1.15rem;
+}
 
 
 .wrapper{
@@ -294,39 +329,9 @@ h4:hover {
   gap:5rem;
 
 }
-.bio-text{
-  flex:auto;
-}
+
 .follow {
   justify-content: space-between;
-}
-.fa-behance {
-  color: #007E6A;
-  width: 20px;
-  height: 50px;
-  margin: 0 10px;
-  font-size: 20px;
-}
-.fa-linkedin-in {
-  color: #007E6A;
-  width: 20px;
-  height: 50px;
-  margin: 0 10px;
-  font-size: 20px;
-}
-.bio-text fa-facebook {
-  color: #007E6A;
-  width: 20px;
-  height: 50px;
-  margin: 0 10px;
-  font-size: 20px;
-}
-.bio-text fa-twitter {
-  color: #007E6A;
-  width: 20px;
-  height: 50px;
-  margin: 0 10px;
-  font-size: 20px;
 }
 
 .progress-bar {
@@ -361,44 +366,54 @@ h4:hover {
   padding: 30px;
   
 }
+.my_bio{
+  opacity: .75;
+  font-weight: 600;
+}
 .grid-columns {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2%;
+  padding: 1.4rem 0 2rem 0;
 }
-
-.grid-columns p {
-  font-size: 20px;
-  margin-bottom: 20px;
+.brief_desc{
+  opacity: .85;
+}
+.grid-columns .column p {
+  margin-bottom: 4px;
   color: #333;
 }
-.grid-columns h2 {
+.grid-columns .column strong {
+  font-size: 18px;
+  font-weight: 600;
+  opacity: .95;
+}
+.grid-columns .column p span{
+  opacity: .75;
+  font-size: 18px;
+  margin-left: .75rem;
+}
+.bio-text h2 {
   font-size: 30px;
   margin-bottom: 20px;
   color: #333;
+  opacity: .95;
 }
-.follow {
-  font-size: 30px;
+.follow span{
+  font-size: 22px;
+  opacity: .95;
+  margin-right: 1.65rem;
+  font-weight: 600;
+}
+.bio-text i{
+  color: #007E6A;
+  font-size: 1.35rem;
+  margin: 0 8px;
+}
+.services{
+  /* padding: 3rem 9rem; */
 }
 
-.fa-wordpress-simple {
-  color: #007E6A;
-}
-.fa-chart-line {
-  color: #007E6A;
-}
-.fa-mobile-screen-button {
-  color: #007E6A;
-}
-.fa-css3-alt {
-  color: #007E6A;
-}
-.fa-headset {
-  color: #007E6A;
-}
-.fa-layer-group {
-  color: #007E6A;
-}
 
 .container-stats {
   display: flex;
