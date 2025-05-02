@@ -314,14 +314,14 @@ h4:hover {
   margin: 0 10px;
   font-size: 20px;
 }
-.fa-facebook {
+.bio-text fa-facebook {
   color: #007E6A;
   width: 20px;
   height: 50px;
   margin: 0 10px;
   font-size: 20px;
 }
-.fa-twitter {
+.bio-text fa-twitter {
   color: #007E6A;
   width: 20px;
   height: 50px;
@@ -421,4 +421,65 @@ h4:hover {
   font-size: 30px;
   margin-bottom: 10px;
   color:#333;
+}
+
+.success-work h2 {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 20px;
+  color:#333;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.container-success-work {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.success-work {
+  position: relative;
+ 
+}
+.success-work img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  background-color: #061F24;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin-top: 50px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.container h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  color:white;
+}
+.fa-asymmetrik {
+  color: white;
+  width: 20px;
+  height: 50px;
+  margin: 0 10px;
+  font-size: 30px;
+}
+.contact-info {
+ color: #AAAAAA;
+}
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  color: #AAAAAA;
 }
