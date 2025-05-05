@@ -586,6 +586,22 @@ nav a:hover, nav a.active {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
+.container-brands {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  background-color: #397F6A;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+}
+
+.brands img {
+  width: 100%;
+  height: auto;
+}
+
 footer {
   background-color: #061F24;
   color: white;
@@ -612,6 +628,11 @@ footer {
 .contact-info {
  color: #AAAAAA;
 }
+.container-social-icons {
+  background-color: #02191E;
+  color:#AAAAAA;
+}
+]
 .social-icons {
   display: flex;
   justify-content: center;
@@ -619,3 +640,4 @@ footer {
   margin-top: 20px;
   color: #AAAAAA;
 }
+
