@@ -178,7 +178,7 @@ nav a:hover, nav a.active {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   width: 100%;
   height: 100vh;
 }
@@ -592,52 +592,66 @@ nav a:hover, nav a.active {
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
   background-color: #397F6A;
-  padding-top: 20px;
-  padding-bottom: 20px;
-
+  padding: 26px 0;
 }
 
 .brands img {
-  width: 100%;
+  width: 90%;
   height: auto;
 }
 
-footer {
-  background-color: #061F24;
-  color: white;
-  padding: 20px;
-  text-align: center;
-  margin-top: 50px;
-  position: relative;
-  bottom: 0;
-  width: 100%;
-}
+
 
 .container h2 {
   font-size: 30px;
   margin-bottom: 20px;
   color:white;
 }
-.fa-asymmetrik {
+
+footer {
+  background-color: #061F24;
   color: white;
-  width: 20px;
-  height: 50px;
+  padding: 4rem 0;
+  bottom: 0;
+  width: 100%;
+}
+footer h2{
+  font-size: 28px;
+  text-align: center;
+}
+footer .fa-asymmetrik {
+  color: white;
   margin: 0 10px;
-  font-size: 30px;
+  font-size: 40px;
 }
 .contact-info {
  color: #AAAAAA;
+ margin-top: 1.45rem;
+ display: flex;
+ align-items: center;
+ justify-content: center;
 }
-.container-social-icons {
-  background-color: #02191E;
-  color:#AAAAAA;
-}
-]
-.social-icons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
-  color: #AAAAAA;
+.contact-info span{
+  margin: 0 .7rem;
 }
 
+.rights_reserved {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 4rem;
+  color: #AAAAAA;
+  padding: 0 6.45rem;
+}
+.rights_reserved p{
+  font-size: 1.25rem;
+}
+.social-icons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.social-icons i {
+  margin: 0 1.25rem;
+}
